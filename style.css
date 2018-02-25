@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+
+body {
+  margin: 0px;
+  background: #000;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+#playerBox {
+  max-width: 100%;
+  max-height: 56.25vw;
+  border-bottom: 1px solid #fff;
+  margin-top: -4.7px;
+}
+
+iframe {
+  max-height: 56.25vw;
+}
+
+#arrow {
+  width: 5%;
+  display: block;
+  margin: auto;
+}
+
+span {
+  cursor: pointer;
+  display: inline-block;
+  top: -.36em;
+  position: relative;
+  padding: 3px;
+  line-height: 3em;
+  height: 3em;
+}
+
+.intro {
+
+}
+
+.intro::after {
+  color: red;
+  content: " intro";
+}
+
+.introTalk {
+
+}
+
+.introTalk::after {
+  color: green;
+  content: " intro talk";
+}
+
+dl {
+	counter-reset: my-badass-counter;
+}
+
+dl dt {
+  position: relative;
+  padding: 2px 10px;
+  word-break: keep-all;
+}
+
+dl dt::before {
+  top: 0px;
+	content: counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+	position: relative;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #333;
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+}

@@ -5,7 +5,7 @@ $.getJSON("concerts.json", function(result){
   concerts = result;
 
   $.each(concerts, function(i, val) {
-    $("body").append("<a href=" + i + ">" + val.title + "</a>" );
+    $("body").append("<a href=" + i + ">" + val.title + "</a></br>" );
     $("#" + i).append(document.createTextNode(" - " + val));
   });
 });
